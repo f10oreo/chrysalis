@@ -457,6 +457,8 @@ Error message and password prompt
 
 <li>discord dump</li>
 
+<li>Draft of '$:/plugins/OokTech/WordCount/EditWordCountTemplate'</li>
+
 <li>Dreimos</li>
 
 <li>elytra inspo</li>
@@ -10628,15 +10630,15 @@ if (field === &quot;show&quot;) {
     }
 }</pre>
 </div>
-<div created="20211010021309653" list-after="$:/core/ui/EditTemplate/tags" modified="20211010031041846" tags="$:/tags/EditTemplate" title="$:/plugins/OokTech/WordCount/EditWordCountTemplate">
+<div created="20211010021309653" list-after="$:/core/ui/EditTemplate/tags" modified="20211010021948407" tags="$:/tags/EditTemplate" title="$:/plugins/OokTech/WordCount/EditWordCountTemplate">
 <pre>&lt;$reveal
     type='nomatch'
     state='$:/settings/OokTech/WordCount!!enable_edit_view'
     text=false
 &gt;
     &lt;$list
-        filter='[is[current]tag[writing]]'
-        emptyMessage=&quot; &quot;
+        filter='[tag{writing}]'
+        emptyMessage=&quot;Word Count: 0&quot;
     &gt;
         Word Count:
         &lt;$word-count
@@ -10648,15 +10650,21 @@ if (field === &quot;show&quot;) {
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div created="20211010022146573" list-after="$:/core/ui/ViewTemplate/tags" modified="20211010030953719" tags="$:/tags/ViewTemplate" title="$:/plugins/OokTech/WordCount/WordCountViewTemplate">
+<div created="20211010022146573" list-after="$:/core/ui/ViewTemplate/tags" modified="20211010025210686" tags="$:/tags/ViewTemplate" title="$:/plugins/OokTech/WordCount/WordCountViewTemplate">
 <pre>&lt;$reveal
     type='match'
     state='$:/settings/OokTech/WordCount!!enable_view_mode'
     text=true
 &gt;
     &lt;$list
+        filter='[is[current]!tag[writing]]'
+        emptyMessage=&quot;&lt;br /&gt;&quot;
+    &gt;
+    &lt;/$list&gt;
+
+    &lt;$list
         filter='[tag[writing]is[current]]'
-        emptyMessage=&quot; &quot;
+        emptyMessage=&quot;Word Count: 0&quot;
     &gt;
         Word Count:
         &lt;$word-count
@@ -11044,14 +11052,14 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210921075020532" modified="20210921075020532" title="$:/state/toc/Realms-Kingdom of Noctiga-30114907">
 <pre>open</pre>
 </div>
-<div created="20211010021904519" modified="20211010031227031" title="$:/state/toc/spoilers-actual writing-657300604">
+<div created="20211010021904519" modified="20211010021904519" title="$:/state/toc/spoilers-actual writing-657300604">
+<pre>open</pre>
+</div>
+<div created="20210921082643418" modified="20211010010816299" title="$:/state/toc/spoilers-excerpts-657300604">
 <pre>close</pre>
 </div>
-<div created="20210921082643418" modified="20211010031227813" title="$:/state/toc/spoilers-excerpts-657300604">
-<pre>open</pre>
-</div>
-<div created="20210921082604591" modified="20211010035216425" title="$:/state/toc/spoilers-reference-657300604">
-<pre>open</pre>
+<div created="20210921082604591" modified="20211010001854377" title="$:/state/toc/spoilers-reference-657300604">
+<pre>close</pre>
 </div>
 <div created="20210921082323822" modified="20210921082420082" title="$:/state/toc/spoilers-show excerpts-657300604">
 <pre>open</pre>
@@ -11062,7 +11070,7 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210911034604539" creator="h" modified="20210911034608681" modifier="h" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div created="20211010011245451" list="[[Kingdom of Noctiga]]" modified="20211010055621238" title="$:/StoryList">
+<div created="20211010011245451" list="[[Part 1]] $:/plugins/OokTech/WordCount $:/plugins/OokTech/WordCount/WordCountViewTemplate $:/plugins/OokTech/WordCount/WordCountControls [[$:/plugins/OokTech/WordCount/Word Count Widget]] [[Draft of '$:/plugins/OokTech/WordCount/EditWordCountTemplate']] $:/plugins/OokTech/WordCount/readme" modified="20211010022027207" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210915063314558" modified="20210921080209497" tags="$:/tags/Stylesheet" title="$:/stylesheets/custom" type="text/css">
@@ -11235,8 +11243,8 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
     }
 }</pre>
 </div>
-<div created="20210911155937752" modified="20211010200503716" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
-<pre>fixed-fluid</pre>
+<div created="20210911155937752" modified="20210911155937752" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
+<pre>fluid-fixed</pre>
 </div>
 <div created="20210921071200304" modified="20210921071219402" title="$:/view">
 <pre>classic</pre>
@@ -11289,15 +11297,12 @@ Techno turns to the new voice: a young man with his arm tightly in the hold of a
 <div created="20210921232659124" list="Teknieris [[Auristellan Sovereignty]] Philza Auristellans" modified="20210922000859079" tags="Characters" title="Auristella" toc-link="no">
 <pre></pre>
 </div>
-<div alink="|Auristella|Auristellan|" created="20210911044150733" modified="20211010222527763" tags="Realms wip" title="Auristellan Empire">
+<div alink="|Auristella|Auristellan|" created="20210911044150733" modified="20211006103451909" tags="Realms wip" title="Auristellan Empire">
 <pre>The ''Auristellan Empire'' covers the entire country of ''Auristella'' and is one of the two largest kingdoms in the &lt;&lt;a: [[First Domain]]&gt;&gt;. Auristella is southwest of the &lt;&lt;a: Hypix&gt;&gt;.
 
 Unlike their &lt;&lt;a: Noctigan&gt;&gt; allies who retain state divisions when expanding the kingdom’s borders, the empire annexes the territories it conquers, thus expanding the country’s borders and not just the realm of sovereignty. These lands and the surrounding areas are re-districted into provinces largely based on biomes. 
 
-!! Geography
-While a majority of the Auristellan Empire is cold and blanketed in snow, the empire contains a variety of wooded biomes including swamp areas and a large jungle province.
-
-The palace compound covers the entirety of a snowy taiga mountain range. The grounds are bounded by ice spikes, snowy tundra, and snowy mountains. There are two 
+While a majority of Auristella is cold and blanketed in snow, the empire contains a variety of wooded biomes including swamp areas and a large jungle province.
 
 !! Royal Family
 
@@ -11538,6 +11543,26 @@ the distance as the crow flies from the taiga village where they reunite to thei
 Wilbur will mention that he makes potions but not that he works with the pillagers, and will notice the Horizon's bond ring on one of Dream's fingers and say &quot;is that a popular design? i know someone who has the same one.&quot;
 &lt;&lt;&lt;</pre>
 </div>
+<div created="20211010021309653" draft.of="$:/plugins/OokTech/WordCount/EditWordCountTemplate" draft.title="$:/plugins/OokTech/WordCount/EditWordCountTemplate" list-after="$:/core/ui/EditTemplate/tags" modified="20211010022120536" tags="$:/tags/EditTemplate" title="Draft of '$:/plugins/OokTech/WordCount/EditWordCountTemplate'">
+<pre>&lt;$reveal
+    type='nomatch'
+    state='$:/settings/OokTech/WordCount!!enable_edit_view'
+    text=false
+&gt;
+    &lt;$list
+        filter='[is[current]has[text]]'
+        emptyMessage=&quot;Word Count: 0&quot;
+    &gt;
+        Word Count:
+        &lt;$word-count
+            tiddler=&lt;&lt;currentTiddler&gt;&gt;
+            field='text'
+            mode=word
+        /&gt;
+    &lt;/$list&gt;
+&lt;/$reveal&gt;
+</pre>
+</div>
 <div alink="|Dream|" created="20210915051931183" list="[[Noctigan Sovereignty]] Giorgos Noctiga" modified="20211006104154802" tags="Noctiga wip" title="Dreimos">
 <pre>[in progress]
 
@@ -11759,7 +11784,7 @@ The two largest kingdoms in the First Domain are the [[Kingdom of Noctiga]] and 
 !! Other Dimensions
 While [[Morserta]] has not been mapped, [[Uro]] is partially mapped. Uro maps are also measured in metrecubes (umc), but they must be converted when comparing them to Overworld maps. </pre>
 </div>
-<div created="20210917225303404" modified="20211010100036158" tags="reference" title="Geography">
+<div created="20210917225303404" modified="20211005194335712" tags="reference" title="Geography">
 <pre>! Map
 Seed: 4397448610994477418 (Large Biomes)
 
@@ -11768,7 +11793,7 @@ Seed: 4397448610994477418 (Large Biomes)
 * Portal: -303 98 -369
 
 !!! Auristella
-* Home-ish: -57349 108 31969
+* Home-ish: -56000 . 23000
 * Portal: -57480 100 32008
 * Portal: -67160 ~ 33512 (Techno leaving for his training in Uro)
 
@@ -11828,15 +11853,12 @@ Days later, people from the nearby village were able to make their way to the Au
 
 //Followed by the [[Years of Empty Sky]]//</pre>
 </div>
-<div alink="|Noctiga|Noctigan|Corsolune|" created="20210911044555130" modified="20211010222531407" tags="Realms wip" title="Kingdom of Noctiga">
+<div alink="|Noctiga|Noctigan|Corsolune|" created="20210911044555130" modified="20211006103444279" tags="Realms wip" title="Kingdom of Noctiga">
 <pre>The ''Kingdom of Noctiga'' consists of the country of Noctiga and dozens of smaller states that surround the Noctigan border. ''Noctiga'' is the oldest country in the &lt;&lt;a: [[First Domain]]&gt;&gt;.
 
 Noctiga's geographical features are largely the same across the kingdom. Since they are at the Hypix, the lands are primarily dry, grassy plains or deserts. This is almost opposite of their &lt;&lt;a: Auristellan&gt;&gt; allies who primarly have snowy woodlands.
 
-
-!! Geography
-
-!!! Corsolune
+!! Corsolune
 
 The capital city is ''Corsolune'' and is located at the &lt;&lt;a: Hypix&gt;&gt;. The city consists of the royal palace, the Elyseum pools, the altar, the royal marketplace, and a few smaller buildings that house royal offices and guest suites.
 
@@ -12147,7 +12169,7 @@ SPOILER CONTENT
 <div created="20210921082449865" list="reference excerpts" modified="20210921082600806" title="spoilers" toc-link="no">
 <pre></pre>
 </div>
-<div alink="|his own coming of age ceremony|" created="20211002073510068" modified="20211010031132626" tags="[[Coming of Age]]" title="Sunrising">
+<div alink="|his own coming of age ceremony|" created="20211002073510068" modified="20211009063600564" tags="[[Coming of Age]] wip" title="Sunrising">
 <pre>''Sunrising'' is the multi-day &lt;&lt;a: [[coming-of-age]]&gt;&gt; ceremony for the heir apparent of &lt;&lt;a: Auristella&gt;&gt;. It begins two days before the heir’s birthday and is a total of 65 days long.
 
 !! Day 1
