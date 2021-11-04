@@ -233,8 +233,6 @@ Error message and password prompt
 
 <li>$:/plugins/OokTech/WordCount/WordCountViewTemplate</li>
 
-<li>$:/plugins/tiddlywiki/blog</li>
-
 <li>$:/plugins/tobibeer/appear</li>
 
 <li>$:/plugins/tobibeer/appear/styles</li>
@@ -246,22 +244,6 @@ Error message and password prompt
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/blog</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/codemirror</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/dynannotate</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/external-attachments</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/freelinks</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/mobiledragdrop</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/share</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/stacked-view</li>
 
 <li>$:/state/edit/references--1637639981</li>
 
@@ -311,13 +293,9 @@ Error message and password prompt
 
 <li>$:/state/folded/spoiler tags template</li>
 
-<li>$:/state/folded/why did you lie to me, phil?</li>
-
 <li>$:/state/folded/World Building</li>
 
 <li>$:/state/image-picker/system--2019343679</li>
-
-<li>$:/state/plugin-info-1948905898-$:/plugins/tiddlywiki/blog---1120066432</li>
 
 <li>$:/state/showeditpreview</li>
 
@@ -10711,36 +10689,6 @@ if (field === &quot;show&quot;) {
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div dependents="" description="Blog publishing tools" list="readme docs" name="Blog" plugin-type="plugin" title="$:/plugins/tiddlywiki/blog" type="application/json" version="5.1.23">
-<pre>{
-    &quot;tiddlers&quot;: {
-        &quot;$:/plugins/tiddlywiki/blog/docs&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/docs&quot;,
-            &quot;text&quot;: &quot;Until there's more documentation, see an example of the use of this plugin here:\n\n* Blog: http://jermolene-blog.github.io/\n* Repository: https://github.com/Jermolene-blog/blog\n&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/blog/readme&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/readme&quot;,
-            &quot;text&quot;: &quot;This plugin contains tools to help publish blogs:\n\n* Templates and tools for building static HTML pages and posts\n&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/blog/templates/html-page/page&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/templates/html-page/page&quot;,
-            &quot;text&quot;: &quot;\\define tv-wikilink-template() posts/$uri_doubleencoded$.html\n\\define tv-config-toolbar-icons() no\n\\define tv-config-toolbar-text() no\n\\define tv-config-toolbar-class() tc-btn-invisible\n`&lt;!doctype html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;meta http-equiv=\&quot;Content-Type\&quot; content=\&quot;text/html;charset=utf-8\&quot; /&gt;\n&lt;meta name=\&quot;generator\&quot; content=\&quot;TiddlyWiki\&quot; /&gt;\n&lt;meta name=\&quot;tiddlywiki-version\&quot; content=\&quot;`{{$:/core/templates/version}}`\&quot; /&gt;\n&lt;meta name=\&quot;viewport\&quot; content=\&quot;width=device-width, initial-scale=1.0\&quot; /&gt;\n&lt;meta name=\&quot;apple-mobile-web-app-capable\&quot; content=\&quot;yes\&quot; /&gt;\n&lt;meta name=\&quot;apple-mobile-web-app-status-bar-style\&quot; content=\&quot;black-translucent\&quot; /&gt;\n&lt;meta name=\&quot;mobile-web-app-capable\&quot; content=\&quot;yes\&quot;/&gt;\n&lt;meta name=\&quot;format-detection\&quot; content=\&quot;telephone=no\&quot;&gt;\n&lt;link id=\&quot;faviconLink\&quot; rel=\&quot;shortcut icon\&quot; href=\&quot;favicon.ico\&quot;&gt;\n&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;static.css\&quot;&gt;\n&lt;title&gt;`&lt;$transclude field=\&quot;caption\&quot;&gt;&lt;$view field=\&quot;title\&quot;/&gt;&lt;/$transclude&gt;: {{$:/core/wiki/title}}`&lt;/title&gt;\n&lt;/head&gt;\n&lt;body class=\&quot;tc-body\&quot;&gt;\n`{{$:/StaticBanner||$:/core/templates/html-tiddler}}`\n&lt;section class=\&quot;tc-story-river\&quot;&gt;\n`&lt;$importvariables filter=\&quot;[[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]\&quot;&gt;\n&lt;$view tiddler=\&quot;$:/plugins/tiddlywiki/blog/templates/tiddler\&quot; format=\&quot;htmlwikified\&quot;/&gt;\n&lt;/$importvariables&gt;`\n&lt;/section&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n`\n&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/blog/templates/html-page/post&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/templates/html-page/post&quot;,
-            &quot;text&quot;: &quot;\\define tv-wikilink-template() /$uri_doubleencoded$.html\n\\define tv-config-toolbar-icons() no\n\\define tv-config-toolbar-text() no\n\\define tv-config-toolbar-class() tc-btn-invisible\n`&lt;!doctype html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;meta http-equiv=\&quot;Content-Type\&quot; content=\&quot;text/html;charset=utf-8\&quot; /&gt;\n&lt;meta name=\&quot;generator\&quot; content=\&quot;TiddlyWiki\&quot; /&gt;\n&lt;meta name=\&quot;tiddlywiki-version\&quot; content=\&quot;`{{$:/core/templates/version}}`\&quot; /&gt;\n&lt;meta name=\&quot;viewport\&quot; content=\&quot;width=device-width, initial-scale=1.0\&quot; /&gt;\n&lt;meta name=\&quot;apple-mobile-web-app-capable\&quot; content=\&quot;yes\&quot; /&gt;\n&lt;meta name=\&quot;apple-mobile-web-app-status-bar-style\&quot; content=\&quot;black-translucent\&quot; /&gt;\n&lt;meta name=\&quot;mobile-web-app-capable\&quot; content=\&quot;yes\&quot;/&gt;\n&lt;meta name=\&quot;format-detection\&quot; content=\&quot;telephone=no\&quot;&gt;\n&lt;link id=\&quot;faviconLink\&quot; rel=\&quot;shortcut icon\&quot; href=\&quot;../favicon.ico\&quot;&gt;\n&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;../static.css\&quot;&gt;\n&lt;title&gt;`&lt;$transclude field=\&quot;caption\&quot;&gt;&lt;$view field=\&quot;title\&quot;/&gt;&lt;/$transclude&gt;: {{$:/core/wiki/title}}`&lt;/title&gt;\n&lt;/head&gt;\n&lt;body class=\&quot;tc-body\&quot;&gt;\n`{{$:/StaticBanner||$:/core/templates/html-tiddler}}`\n&lt;section class=\&quot;tc-story-river\&quot;&gt;\n`&lt;$importvariables filter=\&quot;[[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]\&quot;&gt;\n&lt;$view tiddler=\&quot;$:/plugins/tiddlywiki/blog/templates/tiddler\&quot; format=\&quot;htmlwikified\&quot;/&gt;\n&lt;$view tiddler=\&quot;$:/plugins/tiddlywiki/blog/templates/menu\&quot; format=\&quot;htmlwikified\&quot;/&gt;\n&lt;/$importvariables&gt;`\n&lt;/section&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n`\n&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/blog/templates/menu&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/templates/menu&quot;,
-            &quot;text&quot;: &quot;&lt;div class=\&quot;tc-blog-menu\&quot;&gt;\n\n&lt;div class=\&quot;tc-blog-menu-item\&quot;&gt;\n\n&lt;a href=\&quot;../index.html\&quot;&gt;\n\n{{$:/core/images/home-button}}\n\n&lt;/a&gt;\n\n&lt;/div&gt;\n\n&lt;/div&gt;\n&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/blog/templates/tiddler&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/templates/tiddler&quot;,
-            &quot;text&quot;: &quot;&lt;div class=\&quot;tc-tiddler-frame tc-tiddler-view-frame\&quot;&gt;\n\n&lt;div class=\&quot;tc-tiddler-title\&quot;&gt;\n\n&lt;div class=\&quot;tc-titlebar\&quot;&gt;\n\n&lt;h2 class=\&quot;tc-title\&quot;&gt;\n\n&lt;$transclude field=\&quot;caption\&quot; mode=\&quot;inline\&quot;&gt;\n\n&lt;$view field=\&quot;title\&quot;/&gt;\n\n&lt;/$transclude&gt;\n\n&lt;/h2&gt;\n\n&lt;/div&gt;\n\n&lt;/div&gt;\n\n&lt;div class=\&quot;tc-subtitle\&quot;&gt;\n\n&lt;$view field=\&quot;modified\&quot; format=\&quot;date\&quot; template=\&quot;DDth MMM YYYY\&quot;/&gt;\n\n&lt;/div&gt;\n\n&lt;div class=\&quot;tc-tiddler-body\&quot;&gt;\n\n&lt;$transclude/&gt;\n\n&lt;/div&gt;\n\n&lt;/div&gt;\n&quot;
-        }
-    }
-}</pre>
-</div>
 <div author="Tobias Beer" bag="default" core-version="&gt;=5.1.9" dependents="" description="Create popups, sliders or accordion menus with the appear widget." documentation="https://tobibeer.github.io/tw5-appear" list="readme" plugin-type="plugin" requires="" revision="0" source="https://github.com/tobibeer/tw5-appear" title="$:/plugins/tobibeer/appear" type="application/json" version="0.6.2">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -10835,30 +10783,6 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210910081222392" modified="20210910081243520" title="$:/SiteTitle">
 <pre>Chrysalis</pre>
 </div>
-<div created="20211104002502972" modified="20211104002502972" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/blog">
-<pre>yes</pre>
-</div>
-<div created="20211104002205030" modified="20211104002205030" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/codemirror">
-<pre>yes</pre>
-</div>
-<div created="20211104002310101" modified="20211104002310101" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/dynannotate">
-<pre>yes</pre>
-</div>
-<div created="20211104002320899" modified="20211104002320899" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/external-attachments">
-<pre>yes</pre>
-</div>
-<div created="20211104002331878" modified="20211104002331878" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/freelinks">
-<pre>yes</pre>
-</div>
-<div created="20211104002356909" modified="20211104002356909" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/mobiledragdrop">
-<pre>yes</pre>
-</div>
-<div created="20211104002430489" modified="20211104002430489" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/share">
-<pre>yes</pre>
-</div>
-<div created="20211104002440708" modified="20211104002440708" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/stacked-view">
-<pre>yes</pre>
-</div>
 <div created="20210911153532332" modified="20210911153533573" title="$:/state/edit/references--1637639981">
 <pre>hide</pre>
 </div>
@@ -10931,17 +10855,11 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210916083500879" modified="20210916083500879" title="$:/state/folded/spoiler tags template">
 <pre>hide</pre>
 </div>
-<div created="20211103235820579" modified="20211103235821516" title="$:/state/folded/why did you lie to me, phil?">
-<pre>show</pre>
-</div>
 <div created="20210918003101874" modified="20210921082402524" title="$:/state/folded/World Building">
 <pre>show</pre>
 </div>
 <div created="20210924202346195" modified="20210924202429212" title="$:/state/image-picker/system--2019343679">
 <pre>hide</pre>
-</div>
-<div created="20211104002537697" modified="20211104002711934" title="$:/state/plugin-info-1948905898-$:/plugins/tiddlywiki/blog---1120066432">
-<pre>contents</pre>
 </div>
 <div created="20210911060920739" modified="20211019042757855" title="$:/state/showeditpreview">
 <pre>no</pre>
@@ -10964,14 +10882,14 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210910082603001" modified="20211019042933726" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
-<div created="20210911034638802" modified="20211104002118307" title="$:/state/tab--86143343">
-<pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
+<div created="20210911034638802" modified="20210915195651170" title="$:/state/tab--86143343">
+<pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
 </div>
 <div created="20210910082609882" modified="20211019042936012" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/Stylesheets</pre>
 </div>
-<div created="20210910082612012" modified="20211104002801257" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<div created="20210910082612012" modified="20211019042932598" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20210911034315175" modified="20210920034545826" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -10982,7 +10900,7 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210921074700119" modified="20211010011229210" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/System</pre>
 </div>
-<div created="20210911035627672" modified="20211104002114664" title="$:/state/tab/sidebar--595412856">
+<div created="20210911035627672" modified="20211031182519917" title="$:/state/tab/sidebar--595412856">
 <pre>PublicMenu</pre>
 </div>
 <div created="20210916084612134" modified="20211019042704365" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -11189,7 +11107,7 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210911034604539" creator="h" modified="20210911034608681" modifier="h" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div created="20211104002524579" list="[[why did you lie to me, phil?]] [[Part 1]] [[Part 2]] [[Part 3]] [[Part 4]]" modified="20211104002727707" title="$:/StoryList">
+<div created="20211103231333775" list="[[why did you lie to me, phil?]]" modified="20211103235719884" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210915063314558" modified="20211019201632318" tags="$:/tags/Stylesheet" title="$:/stylesheets/custom" type="text/css">
@@ -12106,7 +12024,7 @@ The blade drops slightly. “Philza?”
 &lt;&lt;&lt;
 </pre>
 </div>
-<div created="20211018195803120" modified="20211104002836489" tags="collection" title="why did you lie to me, phil?">
+<div created="20211018195803120" modified="20211103235743784" tags="collection" title="why did you lie to me, phil?">
 <pre>&lt;p class=&quot;midPage&quot;&gt;For a while, they could pretend they were fine. Like everything wasn't fundamentally different. Like it was three years ago. Until they couldn't.&lt;/p&gt;
 
   &lt;hr class=&quot;newTime&quot;/&gt;

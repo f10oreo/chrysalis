@@ -233,8 +233,6 @@ Error message and password prompt
 
 <li>$:/plugins/OokTech/WordCount/WordCountViewTemplate</li>
 
-<li>$:/plugins/tiddlywiki/blog</li>
-
 <li>$:/plugins/tobibeer/appear</li>
 
 <li>$:/plugins/tobibeer/appear/styles</li>
@@ -246,22 +244,6 @@ Error message and password prompt
 <li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/blog</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/codemirror</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/dynannotate</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/external-attachments</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/freelinks</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/mobiledragdrop</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/share</li>
-
-<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/stacked-view</li>
 
 <li>$:/state/edit/references--1637639981</li>
 
@@ -311,13 +293,9 @@ Error message and password prompt
 
 <li>$:/state/folded/spoiler tags template</li>
 
-<li>$:/state/folded/why did you lie to me, phil?</li>
-
 <li>$:/state/folded/World Building</li>
 
 <li>$:/state/image-picker/system--2019343679</li>
-
-<li>$:/state/plugin-info-1948905898-$:/plugins/tiddlywiki/blog---1120066432</li>
 
 <li>$:/state/showeditpreview</li>
 
@@ -10711,36 +10689,6 @@ if (field === &quot;show&quot;) {
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div dependents="" description="Blog publishing tools" list="readme docs" name="Blog" plugin-type="plugin" title="$:/plugins/tiddlywiki/blog" type="application/json" version="5.1.23">
-<pre>{
-    &quot;tiddlers&quot;: {
-        &quot;$:/plugins/tiddlywiki/blog/docs&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/docs&quot;,
-            &quot;text&quot;: &quot;Until there's more documentation, see an example of the use of this plugin here:\n\n* Blog: http://jermolene-blog.github.io/\n* Repository: https://github.com/Jermolene-blog/blog\n&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/blog/readme&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/readme&quot;,
-            &quot;text&quot;: &quot;This plugin contains tools to help publish blogs:\n\n* Templates and tools for building static HTML pages and posts\n&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/blog/templates/html-page/page&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/templates/html-page/page&quot;,
-            &quot;text&quot;: &quot;\\define tv-wikilink-template() posts/$uri_doubleencoded$.html\n\\define tv-config-toolbar-icons() no\n\\define tv-config-toolbar-text() no\n\\define tv-config-toolbar-class() tc-btn-invisible\n`&lt;!doctype html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;meta http-equiv=\&quot;Content-Type\&quot; content=\&quot;text/html;charset=utf-8\&quot; /&gt;\n&lt;meta name=\&quot;generator\&quot; content=\&quot;TiddlyWiki\&quot; /&gt;\n&lt;meta name=\&quot;tiddlywiki-version\&quot; content=\&quot;`{{$:/core/templates/version}}`\&quot; /&gt;\n&lt;meta name=\&quot;viewport\&quot; content=\&quot;width=device-width, initial-scale=1.0\&quot; /&gt;\n&lt;meta name=\&quot;apple-mobile-web-app-capable\&quot; content=\&quot;yes\&quot; /&gt;\n&lt;meta name=\&quot;apple-mobile-web-app-status-bar-style\&quot; content=\&quot;black-translucent\&quot; /&gt;\n&lt;meta name=\&quot;mobile-web-app-capable\&quot; content=\&quot;yes\&quot;/&gt;\n&lt;meta name=\&quot;format-detection\&quot; content=\&quot;telephone=no\&quot;&gt;\n&lt;link id=\&quot;faviconLink\&quot; rel=\&quot;shortcut icon\&quot; href=\&quot;favicon.ico\&quot;&gt;\n&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;static.css\&quot;&gt;\n&lt;title&gt;`&lt;$transclude field=\&quot;caption\&quot;&gt;&lt;$view field=\&quot;title\&quot;/&gt;&lt;/$transclude&gt;: {{$:/core/wiki/title}}`&lt;/title&gt;\n&lt;/head&gt;\n&lt;body class=\&quot;tc-body\&quot;&gt;\n`{{$:/StaticBanner||$:/core/templates/html-tiddler}}`\n&lt;section class=\&quot;tc-story-river\&quot;&gt;\n`&lt;$importvariables filter=\&quot;[[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]\&quot;&gt;\n&lt;$view tiddler=\&quot;$:/plugins/tiddlywiki/blog/templates/tiddler\&quot; format=\&quot;htmlwikified\&quot;/&gt;\n&lt;/$importvariables&gt;`\n&lt;/section&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n`\n&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/blog/templates/html-page/post&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/templates/html-page/post&quot;,
-            &quot;text&quot;: &quot;\\define tv-wikilink-template() /$uri_doubleencoded$.html\n\\define tv-config-toolbar-icons() no\n\\define tv-config-toolbar-text() no\n\\define tv-config-toolbar-class() tc-btn-invisible\n`&lt;!doctype html&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;meta http-equiv=\&quot;Content-Type\&quot; content=\&quot;text/html;charset=utf-8\&quot; /&gt;\n&lt;meta name=\&quot;generator\&quot; content=\&quot;TiddlyWiki\&quot; /&gt;\n&lt;meta name=\&quot;tiddlywiki-version\&quot; content=\&quot;`{{$:/core/templates/version}}`\&quot; /&gt;\n&lt;meta name=\&quot;viewport\&quot; content=\&quot;width=device-width, initial-scale=1.0\&quot; /&gt;\n&lt;meta name=\&quot;apple-mobile-web-app-capable\&quot; content=\&quot;yes\&quot; /&gt;\n&lt;meta name=\&quot;apple-mobile-web-app-status-bar-style\&quot; content=\&quot;black-translucent\&quot; /&gt;\n&lt;meta name=\&quot;mobile-web-app-capable\&quot; content=\&quot;yes\&quot;/&gt;\n&lt;meta name=\&quot;format-detection\&quot; content=\&quot;telephone=no\&quot;&gt;\n&lt;link id=\&quot;faviconLink\&quot; rel=\&quot;shortcut icon\&quot; href=\&quot;../favicon.ico\&quot;&gt;\n&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;../static.css\&quot;&gt;\n&lt;title&gt;`&lt;$transclude field=\&quot;caption\&quot;&gt;&lt;$view field=\&quot;title\&quot;/&gt;&lt;/$transclude&gt;: {{$:/core/wiki/title}}`&lt;/title&gt;\n&lt;/head&gt;\n&lt;body class=\&quot;tc-body\&quot;&gt;\n`{{$:/StaticBanner||$:/core/templates/html-tiddler}}`\n&lt;section class=\&quot;tc-story-river\&quot;&gt;\n`&lt;$importvariables filter=\&quot;[[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]\&quot;&gt;\n&lt;$view tiddler=\&quot;$:/plugins/tiddlywiki/blog/templates/tiddler\&quot; format=\&quot;htmlwikified\&quot;/&gt;\n&lt;$view tiddler=\&quot;$:/plugins/tiddlywiki/blog/templates/menu\&quot; format=\&quot;htmlwikified\&quot;/&gt;\n&lt;/$importvariables&gt;`\n&lt;/section&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n`\n&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/blog/templates/menu&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/templates/menu&quot;,
-            &quot;text&quot;: &quot;&lt;div class=\&quot;tc-blog-menu\&quot;&gt;\n\n&lt;div class=\&quot;tc-blog-menu-item\&quot;&gt;\n\n&lt;a href=\&quot;../index.html\&quot;&gt;\n\n{{$:/core/images/home-button}}\n\n&lt;/a&gt;\n\n&lt;/div&gt;\n\n&lt;/div&gt;\n&quot;
-        },
-        &quot;$:/plugins/tiddlywiki/blog/templates/tiddler&quot;: {
-            &quot;title&quot;: &quot;$:/plugins/tiddlywiki/blog/templates/tiddler&quot;,
-            &quot;text&quot;: &quot;&lt;div class=\&quot;tc-tiddler-frame tc-tiddler-view-frame\&quot;&gt;\n\n&lt;div class=\&quot;tc-tiddler-title\&quot;&gt;\n\n&lt;div class=\&quot;tc-titlebar\&quot;&gt;\n\n&lt;h2 class=\&quot;tc-title\&quot;&gt;\n\n&lt;$transclude field=\&quot;caption\&quot; mode=\&quot;inline\&quot;&gt;\n\n&lt;$view field=\&quot;title\&quot;/&gt;\n\n&lt;/$transclude&gt;\n\n&lt;/h2&gt;\n\n&lt;/div&gt;\n\n&lt;/div&gt;\n\n&lt;div class=\&quot;tc-subtitle\&quot;&gt;\n\n&lt;$view field=\&quot;modified\&quot; format=\&quot;date\&quot; template=\&quot;DDth MMM YYYY\&quot;/&gt;\n\n&lt;/div&gt;\n\n&lt;div class=\&quot;tc-tiddler-body\&quot;&gt;\n\n&lt;$transclude/&gt;\n\n&lt;/div&gt;\n\n&lt;/div&gt;\n&quot;
-        }
-    }
-}</pre>
-</div>
 <div author="Tobias Beer" bag="default" core-version="&gt;=5.1.9" dependents="" description="Create popups, sliders or accordion menus with the appear widget." documentation="https://tobibeer.github.io/tw5-appear" list="readme" plugin-type="plugin" requires="" revision="0" source="https://github.com/tobibeer/tw5-appear" title="$:/plugins/tobibeer/appear" type="application/json" version="0.6.2">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -10835,30 +10783,6 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210910081222392" modified="20210910081243520" title="$:/SiteTitle">
 <pre>Chrysalis</pre>
 </div>
-<div created="20211104002502972" modified="20211104002502972" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/blog">
-<pre>yes</pre>
-</div>
-<div created="20211104002205030" modified="20211104002205030" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/codemirror">
-<pre>yes</pre>
-</div>
-<div created="20211104002310101" modified="20211104002310101" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/dynannotate">
-<pre>yes</pre>
-</div>
-<div created="20211104002320899" modified="20211104002320899" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/external-attachments">
-<pre>yes</pre>
-</div>
-<div created="20211104002331878" modified="20211104002331878" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/freelinks">
-<pre>yes</pre>
-</div>
-<div created="20211104002356909" modified="20211104002356909" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/mobiledragdrop">
-<pre>yes</pre>
-</div>
-<div created="20211104002430489" modified="20211104002430489" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/share">
-<pre>yes</pre>
-</div>
-<div created="20211104002440708" modified="20211104002440708" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/stacked-view">
-<pre>yes</pre>
-</div>
 <div created="20210911153532332" modified="20210911153533573" title="$:/state/edit/references--1637639981">
 <pre>hide</pre>
 </div>
@@ -10931,17 +10855,11 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210916083500879" modified="20210916083500879" title="$:/state/folded/spoiler tags template">
 <pre>hide</pre>
 </div>
-<div created="20211103235820579" modified="20211103235821516" title="$:/state/folded/why did you lie to me, phil?">
-<pre>show</pre>
-</div>
 <div created="20210918003101874" modified="20210921082402524" title="$:/state/folded/World Building">
 <pre>show</pre>
 </div>
 <div created="20210924202346195" modified="20210924202429212" title="$:/state/image-picker/system--2019343679">
 <pre>hide</pre>
-</div>
-<div created="20211104002537697" modified="20211104002711934" title="$:/state/plugin-info-1948905898-$:/plugins/tiddlywiki/blog---1120066432">
-<pre>contents</pre>
 </div>
 <div created="20210911060920739" modified="20211019042757855" title="$:/state/showeditpreview">
 <pre>no</pre>
@@ -10964,14 +10882,14 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210910082603001" modified="20211019042933726" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
-<div created="20210911034638802" modified="20211104002118307" title="$:/state/tab--86143343">
-<pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
+<div created="20210911034638802" modified="20210915195651170" title="$:/state/tab--86143343">
+<pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
 </div>
 <div created="20210910082609882" modified="20211019042936012" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/Stylesheets</pre>
 </div>
-<div created="20210910082612012" modified="20211104002801257" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<div created="20210910082612012" modified="20211019042932598" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20210911034315175" modified="20210920034545826" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -10982,7 +10900,7 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210921074700119" modified="20211010011229210" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/System</pre>
 </div>
-<div created="20210911035627672" modified="20211104002114664" title="$:/state/tab/sidebar--595412856">
+<div created="20210911035627672" modified="20211031182519917" title="$:/state/tab/sidebar--595412856">
 <pre>PublicMenu</pre>
 </div>
 <div created="20210916084612134" modified="20211019042704365" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -11189,7 +11107,7 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210911034604539" creator="h" modified="20210911034608681" modifier="h" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div created="20211104002524579" list="[[why did you lie to me, phil?]] [[Part 1]] [[Part 2]] [[Part 3]] [[Part 4]]" modified="20211104002727707" title="$:/StoryList">
+<div created="20211103231333775" list="[[2.5* Teknieris’s Sunrising]] [[Part 1]] [[Part 2]] [[Part 3]] [[Part 4]]" modified="20211103231644465" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210915063314558" modified="20211019201632318" tags="$:/tags/Stylesheet" title="$:/stylesheets/custom" type="text/css">
@@ -11520,8 +11438,8 @@ hr.newTime {
 <div chapter="1.2" created="20211015060104816" modified="20211019040543800" tags="[[Part 1]]" title="1.2">
 <pre></pre>
 </div>
-<div chapter="2.1" created="20211016090156352" modified="20211103231750453" tags="[[Part 2]]" title="2.1 One-Time Only Use">
-<pre>&lt;p&gt;&quot;Oh!&quot; Phil's exclamation up ahead is soft, so Teknieris knows they're not in any danger. But his tone goes sad. &quot;Aw, mate.&quot;&lt;/p&gt;
+<div chapter="2.1" created="20211016090156352" modified="20211019043141176" tags="[[Part 2]]" title="2.1 One-Time Only Use">
+<pre>&lt;p class=&quot;midPage&quot;&gt;&quot;Oh!&quot; Phil's exclamation up ahead is soft, so Teknieris knows they're not in any danger. But his tone goes sad. &quot;Aw, mate.&quot;&lt;/p&gt;
 
   &lt;p&gt;When the prince catches up, Philza's crouched in front of a cluster of basalt pillars. A corpse lays at the bottom, half scorched and half eaten.&lt;/p&gt;
 
@@ -11690,26 +11608,26 @@ hr.newTime {
 
   &lt;p&gt;&quot;Sure.&quot; Teknieris begins calculating which pieces of his hunting gear he'll need to switch out. &quot;How many would you like us to get?&quot;&lt;/p&gt;</pre>
 </div>
-<div chapter="2.9*" created="20210923231645689" modified="20211103231814974" tags="[[Part 2]] wip" title="2.9* Imperial Massacre">
-<pre>&lt;p&gt;&quot;I will never take the oath to be queen, but I have always sworn to protect my people.&quot;&lt;/p&gt;
-  
-  &lt;p&gt;Eriane readies an enchanted bow that Teknieris has only seen her use twice the entire time he's known their family. The first: for a party trick to entertain young Teknos and young Dream as she gave up her place in line for the throne. The second: to light the temple fire when the Horizon's Bond was formed. He's never seen her use it to fight and a part of him feels afraid to.&lt;/p&gt;
-  
-  &lt;p&gt;Her arrows are tipped with weakness potions.&lt;/p&gt;
-  
-  &lt;p&gt;&quot;Go.&quot; She turns to the two of them again. &quot;Take the children and get out of here.&quot;&lt;/p&gt;
-  
-  &lt;p&gt;Dreimos nods, but says nothing. Something passes between the siblings in their gazes, but it's something Techno could only assume and never know for certain. A promise to stay safe. A promise to take care of things in the others' stead. A promise to ignore how easily each of them could fail to do either.&lt;/p&gt;
-  
-  &lt;p&gt;Dreimos runs ahead, pulling at Dria's sleeves, but Teknieris turns back at the sound of Eriane’s voice booming over the chaos.&lt;/p&gt;
-  
-  &lt;p&gt;&quot;To stand armed before Noctiga is to stare into the abyss.&quot; She stands on the bridge between the main staircases, bow held in the air. &quot;Let them drown in our endless spirit! Let them kneel before our great strength! Death is certain for all men-&quot;&lt;/p&gt;
-  
-  &lt;p&gt;&quot;But their death is now!&quot;&lt;/p&gt;
-  
-  &lt;p&gt;The chorus of responding voices sends a shiver down Teknieris's spine. He bows his head for a moment and raises his right fist over his heart.&lt;/p&gt;
-  
-  &lt;p&gt;&quot;May the heavens comfort you with victory,&quot; he murmurs before collecting himself and running after Dreimos.&lt;/p&gt;</pre>
+<div chapter="2.9*" created="20210923231645689" modified="20211019040635595" tags="[[Part 2]] wip" title="2.9* Imperial Massacre">
+<pre>“I will never take the oath to be queen, but I’ve already sworn to protect my people.&quot; 
+
+Eriane readies an enchanted bow Techno has only ever seen her use twice the entire time he's known their family. The first: for a party trick to entertain young Techno and young Dream as she gave up her place in line for the throne. The second: to light the altar when the Horizon's bond was formed. He's never seen her use it to fight and a part of him feels afraid to. 
+
+Her arrows are tipped with weakness potions. 
+
+&quot;//Go.//&quot; She turns to the two of them again. &quot;Take the children and get out of here.”
+
+Dream nods, but says nothing. Something passes between the siblings in their gazes, but it's something Techno could only assume and never know for certain. A promise to stay safe. A promise to take care of things in the others' stead. A promise to ignore how easily each of them could fail to do either. 
+
+Dream runs ahead, pulling at Dria's sleeves, but Techno turns back at the sound of Eriane’s voice booming over the chaos.
+
+“To stand armed before Noctiga is to stare into the abyss.&quot; She stands on the bridge between the main staircases, bow held in the air. &quot;Let them drown in our endless spirit! Let them kneel before our great strength! Death is certain for all men-&quot;
+
+&quot;But their death is now!&quot; 
+
+The chorus of responding voices sends a shiver down Techno's spine. He bows his head for a moment and raises a fist to his heart.
+
+&quot;May the heavens comfort you with victory,&quot; he murmurs before collecting himself and running after Dream.</pre>
 </div>
 <div created="20210915082339841" modified="20211016005359377" snippet="true" tags="collection" title="anchor stone">
 <pre>REDO
@@ -11795,7 +11713,7 @@ Sapnap nods. “Yes. I don’t need to follow you.”
 &lt;&lt;&lt;
 </pre>
 </div>
-<div chapter="2.95" created="20211031182521903" modified="20211103231936495" tags="collection wip" title="Imperial massacre (auristellan pov)">
+<div chapter="2.95" created="20211031182521903" modified="20211103071753532" tags="collection" title="Imperial massacre (auristellan pov)">
 <pre>&lt;p&gt;Oknivis is preparing for some sort of trip when he is interrupted&lt;/p&gt;
 
   &lt;p&gt;&quot;Your Majesty, Corsolune has been attacked!&quot; (There's some form of almost-instantaneous communication tbd).&lt;/p&gt;
@@ -12106,46 +12024,24 @@ The blade drops slightly. “Philza?”
 &lt;&lt;&lt;
 </pre>
 </div>
-<div created="20211018195803120" modified="20211104002836489" tags="collection" title="why did you lie to me, phil?">
-<pre>&lt;p class=&quot;midPage&quot;&gt;For a while, they could pretend they were fine. Like everything wasn't fundamentally different. Like it was three years ago. Until they couldn't.&lt;/p&gt;
+<div created="20211018195803120" modified="20211019200706633" tags="collection" title="why did you lie to me, phil?">
+<pre>For a while, they could pretend they were fine. Like everything wasn’t fundamentally different. Like it was three years ago. Until they couldn’t.
 
-  &lt;hr class=&quot;newTime&quot;/&gt;
-  
-  &lt;p&gt;It happens as they're getting ready to go out on a hunt. Phil walks into his companion's room as Technos is pulling on a necklace. When he sees what the pendant is, he stops.&lt;/p&gt;
+It happens as they’re getting ready to go out on a night hunt. Phil walks into the room as Technos pulls on a necklace. When he sees what it is, he stops.
 
-  &lt;p&gt;&quot;Why do you have that?&quot;&lt;/p&gt;
+“Why do you have that?”
 
-  &lt;p&gt;Technos glances over to him, continuing to pull on his layers. &quot;Have what?&quot;&lt;/p&gt;
+Technos glances over to him, continuing to pull on his layers. “Have what?”
 
-  &lt;p&gt;&quot;Don't play stupid, Teknos.&quot; Philza feels the biting panic start to build in his chest. &quot;Why do you have a totem?&quot;&lt;/p&gt;
+“Don’t play stupid, Teknos.” Philza feels the biting panic start to build in his gut. “Why do you have a totem?”
 
-  &lt;p&gt;Teknos stops tying his outer shirt and lets his hands drop to his sides, staring at the floor. It's quiet for a long time as Philza waits for him to answer.&lt;/p&gt;
+Teknos stops tying his outer shirt and lets his hands drop to his sides, staring at the floor. It’s quiet for a long time as Philza waits for him to answer.
 
-  &lt;p&gt;&quot;Why did you lie to me, Phil?&quot; He counters, slowly turning to look at the older man.&lt;/p&gt;
+“Why did you lie to me, Phil?” He slowly turns to look at the older man.
 
-  &lt;p&gt;&quot;I have &lt;i&gt;never&lt;/i&gt; lied to you, Teknieris.&quot;&lt;/p&gt;
+“I have never lied to you, Teknieris.”
 
-  &lt;p&gt;&quot;Then why did you tell me I couldn't use one? I believed you when you said I had more to learn, when you said I was too young. I believed you when you said my parents wouldn't want me to have one. So tell me why all of my siblings had one when they died. Why did my entire family have totems except for me?&quot;&lt;/p&gt;
-  
-  &lt;p&gt;&quot;Because–&quot;&lt;/p&gt;
-  
-  &lt;p&gt;&quot;The twins were only eight years old, Philza! Eight!&quot;&lt;/p&gt;
-  
-  &lt;p&gt;Phil takes a deep breath. &quot;Finish getting ready. Let's take a walk.&quot; He walks out of the room, leaving Teknos in silence.&lt;/p&gt;
-  
-  &lt;p&gt;As frustrated as he is, as angry as he is, Teknieris listens. He finishes tying his shirt, pulls on his cloak, and straps on his bear fur. The only other thing he needs for the outdoors is a weapon. He reaches out for his netherite sword, but stops just before touching it, flexing his hand in the air. Instead, he grabs his netherite axe and slides it into the rings attached to his straps.&lt;/p&gt;
-  
-  &lt;p&gt;Philza stands on the porch outside, staring into the snow. When he hears Teknieris exit, he turns his head to the side and waits for him to walk up beside him.&lt;/p&gt;
-  
-  &lt;p&gt;&quot;Lead the way, &lt;i&gt;beacon&lt;/i&gt;.&quot; Teknieris bites out.&lt;/p&gt;
-  
-  &lt;p&gt;Philza walks on. &quot;Don't get snippy with me, young man. I was the one that raised you, not the other way around.&quot;&lt;/p&gt;
-  
-  &lt;p&gt;&quot;Yeah, and look where that got us now.&quot;&lt;/p&gt;
-  
-  &lt;p&gt;For &lt;i&gt;that&lt;/i&gt;, Phil stops. &quot;Alright, that's it. That's enough.&quot;&lt;p&gt;
-  
-  &lt;p&gt;To Teknieris's surprise, Philza turns around and takes a few steps closer to him before grabbing his shirt collar with both hands. Phil crouches and jumps, opening his elytra and launching them high into the air. He flies east and then promptly lets go while hovering over the river. As Teknos falls, he  pulls an ender pearl from his sleeve and throws it with all his strength straight at Phil's chest. The younger man reaches his hands up and closes his eyes. As he hears the ice shatter underneath him, fabric brushes his fingertips and he immediately grabs what he can. Phil sinks a bit, briefly disoriented by the impact and not expecting the new weight. Teknos&lt;/p&gt;   </pre>
+“Then why did you tell me I couldn’t use one? Why were you so strict about me not having an extra chance to live when everyone else in my family had one?</pre>
 </div>
 <div created="20210923233707473" modified="20211016005502568" tags="collection" title="you are their king">
 <pre>&lt;&lt;&lt;
