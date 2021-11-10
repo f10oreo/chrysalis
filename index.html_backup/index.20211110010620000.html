@@ -197,8 +197,6 @@ Error message and password prompt
 
 <li>$:/isEncrypted</li>
 
-<li>$:/macros/buggyj/misc/location.js</li>
-
 <li>$:/palette</li>
 
 <li>$:/plugins/kookma/timelines</li>
@@ -10675,51 +10673,10 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/macros/buggyj/misc/location.js]]</pre>
+# [[$:/plugins/kookma/timelines]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
-</div>
-<div created="20150819171443000" creator="BuggyJ" modified="20150820013825517" module-type="macro" title="$:/macros/buggyj/misc/location.js" type="application/javascript">
-<pre>/*\
-title: $:/macros/buggyj/misc/location.js
-type: application/javascript
-module-type: macro
-
-&lt;&lt;location field&gt;&gt;
-use:
-&lt;&lt;location &quot;show&quot;&gt;&gt; to see the all the fields
-then 
-&lt;&lt;location &quot;href&quot;&gt;&gt; for url
-
-\*/
-(function(){
-
-/*jslint node: true, browser: true */
-/*global $tw: false */
-&quot;use strict&quot;;
-
-
-exports.name = &quot;location&quot;;
-
-exports.params = [
-	{ name: &quot;field&quot; }
-];
-/*
-Run the macro
-*/
-
-exports.run = function(field) {
-if (field === &quot;show&quot;) {
-	alert (JSON.stringify(window.location));
-}else try {
-		return window.location[field].toString();
-	} catch(e){}
-}
-
-
-})();
-</pre>
 </div>
 <div created="20210915062544615" modified="20210915064142568" title="$:/palette">
 <pre>$:/palettes/Vanilla</pre>
@@ -11152,7 +11109,7 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20210910081222392" modified="20210910081243520" title="$:/SiteTitle">
 <pre>Chrysalis</pre>
 </div>
-<div created="20211105040645754" list="799 801 803 804 806" modified="20211110064115911" title="$:/state-tl/ilam---652723539">
+<div created="20211105040645754" list="799 801 803 804 806" modified="20211109064733559" title="$:/state-tl/ilam---652723539">
 <pre>799</pre>
 </div>
 <div created="20211109003356156" modified="20211109003412205" title="$:/state/dropdown/keyboardshortcut/new-tiddler-286565879">
@@ -11185,10 +11142,10 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <div created="20211109003148479" modified="20211109093350081" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
-<div created="20211104090208427" modified="20211110064516393" title="$:/state/tab/moresidebar-1850697562">
+<div created="20211104090208427" modified="20211107085608640" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/System</pre>
 </div>
-<div created="20211104090202359" modified="20211110064537956" title="$:/state/tab/sidebar--595412856">
+<div created="20211104090202359" modified="20211108092811765" title="$:/state/tab/sidebar--595412856">
 <pre>PublicMenu</pre>
 </div>
 <div created="20211109003155591" modified="20211109093403740" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -11327,12 +11284,12 @@ Google e.g &quot;CSS visibility vs display&quot; if you need more details.
 <pre>open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
 <div created="20210911034604539" creator="h" modified="20210911034608681" modifier="h" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div created="20211110010759109" list="Geography WIP" modified="20211110064522073" title="$:/StoryList">
+<div created="20211110001026080" list="WIP" modified="20211110001106172" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210915063314558" modified="20211108091307496" tags="$:/tags/Stylesheet" title="$:/stylesheets/custom" type="text/css">
@@ -12995,18 +12952,14 @@ In Auristella, Galeana had immediately retired from her royal duties to spend ev
 <div color="#e10000" created="20211107091013794" modified="20211107091030415" title="wip">
 <pre></pre>
 </div>
-<div created="20211110001115919" modified="20211110064053889" tags="reference" title="WIP">
+<div created="20211110001115919" modified="20211110010439517" tags="reference" title="WIP">
 <pre>he'll want to know what happened to his family first. Giorgos will tell him about how his parents had died in the attack and how they had escaped with the two youngest heirs. Dria was not yet old enough to go to Uro, she was only 12 when she died, so she hadn't received any immunizations for the Uro smoke and wither dust. They run into a fortress in Uro and she gets surprised by a wither skeleton. Naptos is quick to tell her to cover her face and is able to kill it with Dreimos's sword, but wither dust gets in her lungs and when they get a chance to rest, she goes unconscious.
 
 wip notes] He's mad at them for not trying to protect his family, especially his youngest sisters. He's mad at the raiders for attacking. He's mad at his family for leaving him behind. He rationalizes everything down to greed: greed for money and power, greed that destroys another's life for personal gain. And he ends up blaming the title of &quot;king.&quot; If his family weren't royalty, they wouldn't be dead. They wouldn't have had something that people envied and felt it was worth killing over.
 
 he blame’s his family’s death and his survival on the corruption of power of authority
 After coming to the (hasty and incorrect) conclusion that his family was purposefully leaving him out of a secret, that they must have chosen to leave him behind or something, that they all chose to die without him
-There should be kind of like a description of his descent into madness, how he thinks that everyone has failed his family regardless of what side they were on, probably make a callback to his conversation about fighting people with Issi. He should say some dramatic line as he kills both ally and foe, maybe something about how there is nothing left to understand, only felt and they will feel death or something like that.
-
-
-
-</pre>
+There should be kind of like a description of his descent into madness, how he thinks that everyone has failed his family regardless of what side they were on, probably make a callback to his conversation about fighting people with Issi. He should say some dramatic line as he kills both ally and foe, maybe something about how there is nothing left to understand, only felt and they will feel death or something like that.</pre>
 </div>
 <div created="20211106023204250" modified="20211106031104057" tags="[[Class 3]]" title="Wither Skeleton">
 <pre>!! Wither
